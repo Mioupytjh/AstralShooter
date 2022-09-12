@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using UnityEngine.AI;
+/*using UnityEngine.AI;
 
-/*
+
 public class EnemyAI : MonoBehaviour
 {
   //public NavMeshAgent agent;
@@ -93,5 +93,4 @@ public class EnemyAI : MonoBehaviour
     {
         alreadyAttacked = false;
     }
-}
-*/
+}*/

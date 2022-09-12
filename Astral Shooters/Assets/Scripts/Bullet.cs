@@ -4,16 +4,19 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float life = 1f;
+    public float life = 2f;
 
     private void Awake()
     {
         Destroy(gameObject, life);
     }
+
     private void OnCollisionEnter(Collision collision)
     {
-        Destroy(collision.gameObject);
-        Destroy(gameObject);
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(collision.gameObject);
+        }
     }
 
     // Start is called before the first frame update
@@ -25,15 +28,6 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*
-        void OnTriggerEnter(Collider other)
-        {
-            if (other.gameObject.tag == "Enemy")
-            {
-                DestroyObject(other.gameObject);
-                Destroy(gameObject);
-            }
-        }
-        */
+
     }
 }
