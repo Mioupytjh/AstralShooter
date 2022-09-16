@@ -25,10 +25,11 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        /*if (Input.GetKeyDown(KeyCode.H))
+        if(currentHealth <= 0f)
         {
-            TakeDamage(20);
-        }*/
+            Destroy(gameObject);
+            
+        }
     }
 
     void TakeDamage(int damage)

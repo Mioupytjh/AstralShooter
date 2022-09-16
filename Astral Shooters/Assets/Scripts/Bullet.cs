@@ -11,11 +11,12 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject, life);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
             Destroy(collision.gameObject);
+            ScoreManager.instance.AddPoint();
         }
     }
 
