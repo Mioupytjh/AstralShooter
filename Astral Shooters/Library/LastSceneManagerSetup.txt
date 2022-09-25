@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/SampleScene.unity
+- path: Assets/DL_Fantasy_RPG_Effects/scene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
